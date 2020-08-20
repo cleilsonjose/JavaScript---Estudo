@@ -104,4 +104,7 @@ var nomes = ["Diego", "Gabriel", "Lucas"];
 <input type="text" name="nome">
 <button onClick="adicionar()">Adicionar</button>
 ```
-### Ao clicar no botão, a função **adicionar()** deve ser disparada adicionando um novo item a lista de nomes baseado no nome preenchido no input e renderizando o novo item em tela juntos aos demais itens anteriores. Além disso, o conteúdo do input deve ser apagado após o clique.
+Ao clicar no botão, a função **adicionar()** deve ser disparada adicionando um novo item a lista de nomes baseado no nome preenchido no input e renderizando o novo item em tela juntos aos demais itens anteriores. Além disso, o conteúdo do input deve ser apagado após o clique.
+
+# Todos
+## Uma aplicação simples de javascipt manipulando o DOM, ondde adiciona e exclui elementos em uma lista
