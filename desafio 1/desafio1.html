@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1 JavaScript</title>
+</head>
+<body>
+    <script>
+        //Exercício 1:
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+        //O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com nº 1293.
+        console.log('O usuário mora em ${cidade} / ${uf}, no bairro ${bairro}, na rua "${rua}" com nº ${numero}.');
+
+        //Exercício 2:
+        /* function pares(x, y) {
+            if(x<y){
+                
+                for (let i = x;i <= y; i++) {
+                    let resultado = x % 2;
+                    let numeroPar = [];
+                     if(resultado === 0){
+                         numeroPar[i] = x
+                        console.log(numeroPar[i] + ' é par')
+                    }
+                    x+=1;
+                }
+            } else if(y<x){
+                for (let i = y;i <= x; i++) {
+                    let resultado = y % 2;
+                    let numeroPar = [];
+                     if(resultado === 0){
+                         numeroPar[i] = y
+                        console.log(numeroPar[i] + ' é par')
+                    }
+                    y+=1;
+            }
+            }
+        }
+        pares(100, 10); */
+        //Exercício 3:
+        function habilidade(skill, find) {
+            return (skill.indexOf(find) >= 0);
+        }
+
+        var skill = ['javascript', 'reactjs', 'React native'];
+        console.log(habilidade(skill, 'javascript'));
+
+        //Exercício 4:
+        function experiencia(anos) {
+             
+            if (anos >= 0 || anos <= 1) {
+                return console.log('Você tem ${age} anos de exp, seu nível é: Iniciante'); 
+            } else if(anos >= 1 || anos <= 3) {
+                return console.log('Você tem ${age} anos de exp, seu nível é: Intermediário');
+            } else if(anos >= 1 || anos <= 3){
+                return console.log('Você tem ${age} anos de exp, seu nível é: Avançado');
+            }
+            return console.log('Você tem ${age} anos de exp, seu nível é: Jedi Master');
+            
+        }   
+        var anosEstudo = 7 ;
+        experiencia(anosEstudo);
+
+        //Exercício 5:
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+        function mensagem(usuarios){
+            for (const user of usuarios) {
+            const { nome, habilidades } = user;
+            console.log(`O ${nome} possui as habilidades: ${habilidades.join(", ")}`);
+         }
+        }
+        mensagem(usuarios);
+       
+       
+
+
+    </script>
+</body>
+</html>
