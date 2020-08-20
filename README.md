@@ -1,4 +1,4 @@
-![1200px-Unofficial_JavaScript_logo_2 svg](https://user-images.githubusercontent.com/39439932/90823587-8218d680-e30c-11ea-9919-01c3686d9b42.png)
+![1200px-Unofficial_JavaScript_logo_2 svg](https://user-images.githubusercontent.com/39439932/90826088-41bb5780-e310-11ea-8c8f-d9d1e6b1caf4.png)
 
 # JavaScript---Estudo
 ## Códigos feitos durante o aprendizado de JavaScript
