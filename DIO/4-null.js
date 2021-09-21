@@ -1,0 +1,1 @@
+const nullVariable = null;
