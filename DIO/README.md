@@ -1,20 +1,26 @@
 ## Currying
 
-**Currying** é o processo de transformar uma função que espera vários argumentos em uma função que espera um único argumento e retorna outra função *curried*.
+**Currying** é a técnica de transforma uma função com vários parâmetros em apenas um sendo que para cada parâmetro e retornando outra função.
 
 ```javascript
-function soma(a){
-  return function(b){
+//função natural
+function somaFn(a, b) {
+  return a + b;
+}
+
+//aplicação do currying
+function somaCurrying(a) {
+  return function(b) {
     return a + b;
   }
 }
 
-const soma2 =  soma(2);
+//chamada função natural
+console.log(somaFn(1, 1));
 
-console.log(soma2(2));
-console.log(soma2(3));
-console.log(soma2(4));
-console.log(soma2(5));
+//chamada função currying
+const resultSoma = somaCurrying(1);
+console.log(resultSoma(1));
 ```
 
 ## Escopo
@@ -62,7 +68,24 @@ const twoCharsBeforeFirstPos = 'Texto'.substr(0, 2);
 console.log('\nAs duas letras primeiras letras são:', twoCharsBeforeFirstPos);
 ```
 
-* number
+### Number
+  ```javascript
+  const myNumber = 12.4032;
+
+  //transformar número para string
+  const numberAsString = myNumber.toString();
+  console.log('Número trasnformado em string: ', numberAsString, typeof numberAsString);
+
+  //retorna número com um número de casas decimais
+  const fixedTwoDecimals = myNumber.toFixed(2);
+  console.log('\nNúmero com duas casa decimais: ', fixedTwoDecimals);
+
+  //transforma uma string em float
+  console.log('\nString convertida para float: ', parseFloat('13.22'));
+
+  //transforma uma string em int
+  console.log('\nString convertida para int: ', parseInt('13.20'));
+  ```
 * boolean
 * null
 * undefined
@@ -70,7 +93,6 @@ console.log('\nAs duas letras primeiras letras são:', twoCharsBeforeFirstPos);
 * Object
 * Function 
 * Array
-
 
 
 
