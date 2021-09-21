@@ -1,40 +1,3 @@
-## Currying
-
-**Currying** é o processo de transformar uma função que espera vários argumentos em uma função que espera um único argumento e retorna outra função *curried*.
-
-```javascript
-function soma(a){
-  return function(b){
-    return a + b;
-  }
-}
-
-const soma2 =  soma(2);
-
-console.log(soma2(2));
-console.log(soma2(3));
-console.log(soma2(4));
-console.log(soma2(5));
-```
-
-## Escopo
-```javascript
-// escopo global
-
-{
-  //escopo de bloco
-}
-
-function test(){
-  //escopo de função
-}
-```
-
-## Tipos e variáveis
-
-### String
-
-```javascript
 // retorna o tamanho de uma string
 const textSize = 'Texto'.length;
 console.log(`Quantidade de letras: ${textSize}`);
@@ -60,17 +23,4 @@ console.log('\nValor da string da segunda letra até a última:', secondToEnd);
 // Retorna N caracteres a partir de uma posição
 const twoCharsBeforeFirstPos = 'Texto'.substr(0, 2);
 console.log('\nAs duas letras primeiras letras são:', twoCharsBeforeFirstPos);
-```
-
-* number
-* boolean
-* null
-* undefined
-* symbol
-* Object
-* Function 
-* Array
-
-
-
 
