@@ -394,3 +394,99 @@ x = x % y //ou
 x %= y
 ```
 
+### Condicional
+
+```javascript
+//ternário
+//condicao ? valor1 : valor2
+
+true ? 'foo' : 'bar' //retorna 'foo'
+false ? 'foo' : 'bar' //retorna 'bar'
+```
+
+### Comparação
+
+```javascript
+//igual (==)
+//retorna verdadeiro caso os operandos sejam iguais. 3 == var1
+"3" == var1
+3 == '3'
+
+//não igual (!=)
+//retorna verdadeiro caso os operandos não sejam iguais. var1 != 4
+var2 != "3"
+
+//estritamente igual (===)
+//retorna verdadeiro caso os operando sejam iguais e do mesmo tipo. Veja támbem Object.
+3 === var1
+
+//estritamente não igual (!===)
+//retorna verdadeiro caso os operandos não sejam iguais e/ou não sejam do mesmo tipo
+var1 !== "3"
+3 !== '3'
+
+//maior que (>)
+//retorna verdadeiro caso o operando da esquerda seja maior que o da direita
+var2 > var1
+"12" > 2
+
+//maior que ou igual (>=)
+//retorna verdadeiro caso o operando da esquerda seja maior ou igual ao da direita
+var2 >= var1
+var1 >= 3
+
+//menor que (<)
+//retorna verdadeiro caso o operando da esquerda seja menor que o da direita.
+var1 < var2
+"12" < "2"
+
+//menor que ou igual (<=)
+//retorna verdadeiro caso o operando da esquerda seja menor ou igual ao da direita
+var1 <= var2
+var2 <= 5
+```
+
+### Lógicos
+
+```javascript
+//E lógico (&&)
+//exp1 && exp2;
+
+//AND lógico (&&)
+var a1 = true && true       //retorna true
+var a2 = true && false      //retorna false
+var a3 = false && true      //retorna false
+var a4 = false && (3 == 4)  //retorna false
+var a5 = "Gato" && "Cão"    //retorna Cão
+var a6 = false && "Gato"    //retorna false
+var a7 = "Gato" && false    //retorna false
+
+//OU lógico (||)
+//exp1 || exp2
+
+var o1 = true || true       //retorna true
+var o2 = false || true      //retorna true
+var o3 = true || false      //retorna true
+var o4 = false || (3 == 4)  //retorna false
+var o5 = "Gato" || "Cão"    //retorna Gato
+var o6 = false || "Gato"    //retorna Gato
+var o7 = "Gato" || false    //retorna Gato
+
+//exemplo para atribuição de variável
+//conteudo = conteudo || 'fallback';
+
+//NOT lógico (!)
+//!exp1
+
+var n1 = !true      //retorna false
+var n2 = !false;    //retorna true
+var n3 = !"Gato";   //retorna false (string com valor é verdadeira)
+
+//String com valor e sem valor
+//True
+" "
+
+//False
+""
+```
+
