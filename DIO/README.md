@@ -338,7 +338,59 @@ const totalEvenAges = persons
 console.log('\nSoma de idade das pessoas que possuem idade par: ', totalEvenAges);
 ```
 
+### Operadores
 
+```javascript
+//módulo (%)
+//operador binário. retorna o inteiro restante da divisão dos dois operadores
+console.log(12 % 5) // retorna 2
 
+//incremento (++) 
+++x
+x++
+//decremento (--)
+--x
+x--
 
+//negação (-) adição (+)
+-3
++"3" //retorna 3
++true //retorna 1
++false //retorna 0
+-true //retorna -1
+
+//operador de exponenciação (**)
+2 ** 3 //retorna 8
+10 ** -1 //retorna 0.1
+
+//operador de agrupamento ()
+2 * (3 + 2)
+```
+
+### Atribuição
+
+```javascript
+//atribuição
+x = y
+
+//atribuição de adição
+x = x + y //ou
+x += y
+
+//atribução de subtração
+x = x - y //ou
+x -= y
+
+//atribuição de multiplicação
+x = x * y //ou
+x *= y
+
+//atribuição de divisão
+x = x / y //ou
+x /= y
+
+//atribuição de resto
+x = x % y //ou
+x %= y
+```
 
